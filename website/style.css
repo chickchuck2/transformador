@@ -185,7 +185,6 @@ body::before {
 
 .sidebar-item.active .label { color: var(--text); }
 
-/* ── Área principal ───────────────────────────────────────── */
 #main {
   grid-area: main;
   overflow-y: auto;
@@ -194,6 +193,20 @@ body::before {
   position: relative;
   scrollbar-width: thin;
   scrollbar-color: var(--border) transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 0.4s ease-in-out;
+}
+
+#main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 11, 20, 0.86); /* Camada sólida escura (86% de opacidade) */
+  pointer-events: none;
+  z-index: 0;
 }
 
 #main::-webkit-scrollbar { width: 6px; }
@@ -202,6 +215,8 @@ body::before {
 
 /* ── Slide container ──────────────────────────────────────── */
 #slide-view {
+  position: relative;
+  z-index: 1;
   max-width: 900px;
   margin: 0 auto;
   animation: slideIn 0.35s cubic-bezier(0.22, 1, 0.36, 1);

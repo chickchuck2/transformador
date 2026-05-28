@@ -8,6 +8,7 @@ const SLIDES = [
 {
   title: "Transformadores Elétricos",
   short: "Capa",
+  bg: "wallpapers/wallpaper_01.png",
   html: `
     <div class="slide-hero">
       <div class="hero-badge">⚡</div>
@@ -25,6 +26,7 @@ const SLIDES = [
 {
   title: "O que é um Transformador?",
   short: "Conceito",
+  bg: "wallpapers/wallpaper_02.png",
   html: `
     <div class="slide-tag">⚙️ Definição</div>
     <h2 class="slide-title">O que é um Transformador?</h2>
@@ -55,6 +57,7 @@ const SLIDES = [
 {
   title: "Indução Eletromagnética",
   short: "Indução Eletromagnética",
+  bg: "wallpapers/wallpaper_03.png",
   html: `
     <div class="slide-tag">🔬 Princípio Físico</div>
     <h2 class="slide-title">A Base de Tudo: Indução Eletromagnética</h2>
@@ -102,6 +105,7 @@ const SLIDES = [
 {
   title: "Componentes do Transformador",
   short: "Componentes",
+  bg: "wallpapers/wallpaper_04.png",
   html: `
     <div class="slide-tag">🔩 Estrutura</div>
     <h2 class="slide-title">Estrutura Interna do Transformador</h2>
@@ -141,6 +145,7 @@ const SLIDES = [
 {
   title: "Funcionamento Passo a Passo",
   short: "Como Funciona",
+  bg: "wallpapers/wallpaper_05.png",
   html: `
     <div class="slide-tag">🔄 Operação</div>
     <h2 class="slide-title">Como o Transformador Funciona?</h2>
@@ -193,6 +198,7 @@ const SLIDES = [
 {
   title: "Fórmula e Relação de Transformação",
   short: "Fórmula (k)",
+  bg: "wallpapers/wallpaper_06.png",
   html: `
     <div class="slide-tag">📐 Matemática</div>
     <h2 class="slide-title">A Fórmula Chave dos Transformadores</h2>
@@ -236,6 +242,7 @@ const SLIDES = [
 {
   title: "Por que NÃO funciona com CC?",
   short: "CA vs CC",
+  bg: "wallpapers/wallpaper_07.png",
   html: `
     <div class="slide-tag">🚫 Limitação Fundamental</div>
     <h2 class="slide-title">Por que Transformadores NÃO Funcionam com CC?</h2>
@@ -279,6 +286,7 @@ const SLIDES = [
 {
   title: "Analogia: CA vs. CC",
   short: "Analogia da Colher",
+  bg: "wallpapers/wallpaper_08.png",
   html: `
     <div class="slide-tag">💡 Entendendo com Analogia</div>
     <h2 class="slide-title">Entendendo com uma Analogia</h2>
@@ -319,6 +327,7 @@ const SLIDES = [
 {
   title: "Tipos de Transformadores",
   short: "Tipos (visão geral)",
+  bg: "wallpapers/wallpaper_09.png",
   html: `
     <div class="slide-tag">🗂️ Classificação</div>
     <h2 class="slide-title">Tipos de Transformadores</h2>
@@ -366,6 +375,7 @@ const SLIDES = [
 {
   title: "Transformador Monofásico",
   short: "Monofásico",
+  bg: "wallpapers/wallpaper_10.png",
   html: `
     <div class="slide-tag">🔵 Tipo de Transformador</div>
     <h2 class="slide-title">Transformador Monofásico</h2>
@@ -401,6 +411,7 @@ const SLIDES = [
 {
   title: "Transformador Trifásico",
   short: "Trifásico",
+  bg: "wallpapers/wallpaper_11.png",
   html: `
     <div class="slide-tag">🟣 Tipo de Transformador</div>
     <h2 class="slide-title">Transformador Trifásico</h2>
@@ -442,6 +453,7 @@ const SLIDES = [
 {
   title: "Ligações: Estrela e Triângulo",
   short: "Estrela e Triângulo",
+  bg: "wallpapers/wallpaper_12.png",
   html: `
     <div class="slide-tag">🔗 Conexões Trifásicas</div>
     <h2 class="slide-title">Tipos de Ligação em Trifásicos</h2>
@@ -486,6 +498,7 @@ const SLIDES = [
 {
   title: "Exemplos Práticos",
   short: "Exemplos Práticos",
+  bg: "wallpapers/wallpaper_13.png",
   html: `
     <div class="slide-tag">📍 Casos Reais</div>
     <h2 class="slide-title">Transformadores na Prática</h2>
@@ -541,6 +554,7 @@ const SLIDES = [
 {
   title: "Aplicações por Setor",
   short: "Aplicações por Setor",
+  bg: "wallpapers/wallpaper_14.png",
   html: `
     <div class="slide-tag">🌐 Presença Global</div>
     <h2 class="slide-title">Onde os Transformadores São Usados?</h2>
@@ -596,6 +610,7 @@ const SLIDES = [
 {
   title: "Vantagens e Desvantagens",
   short: "Vantagens e Desvantagens",
+  bg: "wallpapers/wallpaper_15.png",
   html: `
     <div class="slide-tag">⚖️ Análise</div>
     <h2 class="slide-title">Vantagens e Desvantagens</h2>
@@ -624,6 +639,7 @@ const SLIDES = [
 {
   title: "Monofásico × Trifásico",
   short: "Comparativo",
+  bg: "wallpapers/wallpaper_16.png",
   html: `
     <div class="slide-tag">📊 Comparativo</div>
     <h2 class="slide-title">Monofásico × Trifásico</h2>
@@ -665,6 +681,7 @@ const SLIDES = [
 {
   title: "O Caminho da Energia",
   short: "Caminho da Energia",
+  bg: "wallpapers/wallpaper_17.png",
   html: `
     <div class="slide-tag">🗺️ Fluxo do Sistema Elétrico</div>
     <h2 class="slide-title">O Caminho da Energia Elétrica</h2>
@@ -723,6 +740,7 @@ const SLIDES = [
 {
   title: "Pontos-Chave para Fixação",
   short: "Pontos-Chave",
+  bg: "wallpapers/wallpaper_18.png",
   html: `
     <div class="slide-tag">📌 Revisão</div>
     <h2 class="slide-title">Pontos-Chave para Fixar</h2>
@@ -748,13 +766,51 @@ const SLIDES = [
         </div>
       `).join('')}
     </div>
+    
+    <div class="notice" style="margin-top:24px; background:rgba(124,58,237,0.08); border-color:rgba(124,58,237,0.3); color:#A78BFA">
+      🎵 <span><strong>Bônus Trilha Sonora:</strong> Agora que revisamos os conceitos, que tal relaxar com a nossa música tema? Siga para o próximo slide para escutar a trilha exclusiva: <strong>Transformadorzinho</strong>!</span>
+    </div>
   `
 },
 
-// ── 19 ─ ENCERRAMENTO ─────────────────────────────────────
+// ── 19 ─ MÚSICA ──────────────────────────────────────────
+{
+  title: "Trilha Sonora: Transformadorzinho",
+  short: "Trilha Sonora",
+  bg: "wallpapers/wallpaper_19.png",
+  html: `
+    <div class="slide-tag">🎵 Trilha Sonora</div>
+    <h2 class="slide-title">Música: Transformadorzinho</h2>
+    <p class="slide-subtitle">A trilha sonora exclusiva dos transformadores elétricos</p>
+    
+    <div class="closing-card" style="margin-top:24px; text-align:center; padding:32px; background:linear-gradient(135deg, rgba(0,212,255,0.08), rgba(124,58,237,0.08)); border-color:rgba(0,212,255,0.25)">
+      <div style="font-size:4rem; margin-bottom:16px; filter:drop-shadow(0 0 16px var(--accent))">🎧</div>
+      <h3 style="color:var(--text-heading); font-size:1.4rem; margin-bottom:8px">Dê o Play na Energia!</h3>
+      <p style="font-size:0.95rem; color:var(--text-dim); margin-bottom:24px; line-height:1.6">
+        Uma homenagem musical em áudio dedicada a estes dispositivos incríveis que
+        mantêm o nosso mundo totalmente conectado e energizado.
+      </p>
+      
+      <div class="audio-player-container" style="display:flex; justify-content:center; margin-top:20px">
+        <audio controls autoplay style="width:100%; max-width:500px; border-radius:30px; box-shadow:0 8px 32px rgba(0,0,0,0.5);">
+          <source src="../src/audios/Transformadorzinho.mp3" type="audio/mpeg">
+          Seu navegador não suporta a reprodução deste áudio.
+        </audio>
+      </div>
+    </div>
+    
+    <div class="notice" style="margin-top:24px;">
+      💡 <span><strong>Curiosidade:</strong> A música começa a tocar automaticamente (dependendo das configurações do seu navegador).
+      Você pode ajustar o volume ou pausar a reprodução a qualquer momento diretamente pelo player acima.</span>
+    </div>
+  `
+},
+
+// ── 20 ─ ENCERRAMENTO ─────────────────────────────────────
 {
   title: "Conclusão",
   short: "Encerramento",
+  bg: "wallpapers/wallpaper_20.png",
   html: `
     <div class="slide-tag">🏁 Finalização</div>
     <h2 class="slide-title">Conclusão</h2>
@@ -791,7 +847,6 @@ const SLIDES = [
     </div>
   `
 }
-
 ]; // fim SLIDES
 
 
@@ -840,6 +895,14 @@ function render(animate = true) {
     fill.style.width = `${((current + 1) / SLIDES.length) * 100}%`;
     btnPrev.disabled = current === 0;
     btnNext.disabled = current === SLIDES.length - 1;
+
+    // atualiza wallpaper de fundo do main
+    const mainEl = document.getElementById('main');
+    if (s.bg) {
+      mainEl.style.backgroundImage = `url('${s.bg}')`;
+    } else {
+      mainEl.style.backgroundImage = 'none';
+    }
 
     // atualiza sidebar
     document.querySelectorAll('.sidebar-item').forEach((el, i) => {
