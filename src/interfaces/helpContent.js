@@ -1,0 +1,298 @@
+const DEFAULT_USAGE = {
+  how: "Caso real: voce muda esse valor como se estivesse testando um aparelho antes de ligar na tomada.",
+  when: "Caso real: quando um aparelho esquenta, faz barulho ou nao recebe a energia certa.",
+};
+
+export const HELP_CONTENT = {
+  app: {
+    title: "TransFlux 360",
+    body: "Este painel mostra um transformador como se voce pudesse enxergar eletricidade e magnetismo trabalhando por dentro.",
+    how: "Caso real: imagine testar uma pecinha que muda a energia da tomada antes de ligar um aparelho nela.",
+    when: "Caso real: para entender por que um carregador, fonte ou transformador esquenta, zumbe ou muda a energia de saida.",
+  },
+  simulation: {
+    title: "Area de simulacao",
+    body: "Aqui ficam as bobinas, o nucleo e as particulas. Pense nela como uma maquete viva do transformador.",
+    how: "Caso real: aumente a energia que entra e veja se a parte de ferro comeca a brilhar demais.",
+    when: "Caso real: quando um transformador faz barulho, esquenta muito ou desarma o disjuntor.",
+  },
+  oscilloscope: {
+    title: "Osciloscopio",
+    body: "E um grafico que desenha ondas ao longo do tempo. Ele mostra quando a energia sobe, desce ou fica atrasada.",
+    how: "Caso real: e como olhar a batida do coracao da energia para ver se entrada e saida combinam.",
+    when: "Caso real: quando um motor demora para responder, uma fonte oscila ou a saida parece estranha.",
+  },
+  system: {
+    title: "Sistema",
+    body: "Define se o transformador trabalha com uma fase simples ou tres fases alternadas.",
+    how: "Caso real: escolha Mono para algo parecido com tomada comum e Tri para maquinas maiores.",
+    when: "Caso real: antes de ligar uma maquina, voce precisa saber se ela usa uma fase ou tres fases.",
+  },
+  sound: {
+    title: "Som intuitivo",
+    body: "Liga um som sintetico. O zumbido acompanha o campo magnetico, e alertas aparecem quando algo fica mal configurado.",
+    how: "Caso real: transformadores reais podem zumbir mais quando estao sobrecarregados ou saturando; aqui o som ajuda a perceber isso.",
+    when: "Caso real: para perceber pelo som quando algo esta pesado demais ou mal ajustado.",
+  },
+  mono: {
+    title: "Mono",
+    body: "Monofasico: usa uma unica onda eletrica. E comum em tomadas residenciais simples.",
+    how: "Caso real: use para simular carregador, fonte pequena, campainha, tomada comum ou transformador pequeno.",
+    when: "Caso real: casas e aparelhos pequenos normalmente entram melhor nessa ideia.",
+  },
+  tri: {
+    title: "Tri",
+    body: "Trifasico: usa tres ondas deslocadas entre si. E comum em motores e sistemas de maior potencia.",
+    how: "Caso real: use para simular motores grandes, bombas, compressores e maquinas de oficina.",
+    when: "Caso real: fabricas e maquinas maiores costumam usar tres fases para funcionar melhor.",
+  },
+  parameters: {
+    title: "Parametros",
+    body: "Sao os controles principais. Ao mexer neles, voce muda o comportamento eletrico do transformador.",
+    how: "Caso real: voce muda esses valores para imitar uma tomada, um aparelho ligado e um transformador diferente.",
+    when: "Caso real: quando quer saber se um aparelho vai receber energia demais, de menos ou na medida certa.",
+  },
+  primaryVoltage: {
+    title: "Tensao primaria",
+    body: "E a energia que chega no lado de entrada do transformador, como 127 V ou 220 V da tomada.",
+    how: "Caso real: se a tomada for 220 V em vez de 127 V, coloque 220 V para ver o que aconteceria na saida.",
+    when: "Caso real: quando voce quer saber se ligar em 127 V ou 220 V vai dar certo ou queimar algo.",
+  },
+  frequency: {
+    title: "Frequencia",
+    body: "Diz quantas vezes por segundo a energia da tomada muda de sentido. No Brasil, normalmente e 60 Hz.",
+    how: "Caso real: um aparelho feito para 60 Hz pode esquentar se for usado em 50 Hz sem cuidado.",
+    when: "Caso real: quando voce tem equipamento importado, gerador ou inversor.",
+  },
+  turnsRatio: {
+    title: "Relacao Np/Ns",
+    body: "Compara quantas voltas de fio existem no lado de entrada e no lado de saida. Isso decide se a energia sai mais alta ou mais baixa.",
+    how: "Caso real: para transformar 220 V em 12 V, o transformador precisa de uma combinacao de voltas que abaixe bastante a saida.",
+    when: "Caso real: escolher transformador para carregador, fonte ou luz pequena.",
+  },
+  zoom: {
+    title: "Zoom visual",
+    body: "Apenas aproxima ou afasta o desenho. Nao altera a fisica da simulacao.",
+    how: "Caso real: em uma apresentacao ou aula, aumente o zoom para mostrar melhor as bobinas e o nucleo.",
+    when: "Caso real: usar em projetor, tela pequena ou quando quiser focar visualmente em uma parte do transformador.",
+  },
+  core: {
+    title: "Nucleo",
+    body: "E a parte de ferro no meio. Ela ajuda uma bobina a passar energia para a outra sem encostar fios.",
+    how: "Caso real: um nucleo melhor esquenta menos e faz o transformador trabalhar com mais calma.",
+    when: "Caso real: quando um transformador esquenta muito ou faz zumbido forte.",
+  },
+  permeability: {
+    title: "Permeabilidade",
+    body: "Mostra se a parte de ferro deixa o magnetismo passar facil ou com dificuldade.",
+    how: "Caso real: um ferro melhor ajuda o transformador a esquentar menos.",
+    when: "Caso real: comparar um transformador melhor com um mais simples ou barato.",
+  },
+  saturationKnee: {
+    title: "Joelho de saturacao",
+    body: "E o ponto em que a parte de ferro fica quase 'lotada' de magnetismo. Depois disso, ela trabalha mal.",
+    how: "Caso real: se colocar energia demais, o nucleo pode lotar e puxar energia demais da tomada.",
+    when: "Caso real: quando o transformador esquenta, ronca alto ou desarma o disjuntor ao ligar.",
+  },
+  hysteresis: {
+    title: "Histerese",
+    body: "E como uma 'memoria' do ferro. Ele demora um pouco para mudar o magnetismo, e parte da energia vira calor.",
+    how: "Caso real: se essa perda for grande, o transformador esquenta mesmo sem alimentar muita coisa.",
+    when: "Caso real: transformadores que ficam ligados o dia todo precisam ter pouca perda desse tipo.",
+  },
+  load: {
+    title: "Carga",
+    body: "E o aparelho ligado na saida do transformador, como lampada, motor, placa ou carregador.",
+    how: "Caso real: uma lampada se parece mais com carga resistiva; um motor se parece mais com carga indutiva.",
+    when: "Caso real: antes de ligar um aparelho, para saber se ele vai puxar pouca ou muita energia.",
+  },
+  openLoad: {
+    title: "Aberta",
+    body: "Nada esta ligado na saida. A energia aparece ali, mas quase nada e consumido.",
+    how: "Caso real: medir a energia de saida com multimetro sem conectar nenhum aparelho.",
+    when: "Caso real: teste inicial para confirmar se o transformador esta gerando saida antes de conectar algo.",
+  },
+  resistiveLoad: {
+    title: "Resistiva",
+    body: "Representa algo como lampada antiga, aquecedor ou resistor. A energia e consumida de forma simples.",
+    how: "Caso real: simule aquecedor, resistor de teste ou lampada antiga ligada na saida.",
+    when: "Caso real: estudar aparelhos simples, que nao atrasam muito a energia.",
+  },
+  inductiveLoad: {
+    title: "Indutiva",
+    body: "Representa motores e bobinas. Eles demoram um pouco para acompanhar a energia que chega.",
+    how: "Caso real: simule motor, rele, solenoide, contator ou bobina alimentada pelo transformador.",
+    when: "Caso real: quando um motor puxa bastante energia ao ligar ou faz a instalacao pesar mais.",
+  },
+  readings: {
+    title: "Leituras",
+    body: "Sao os numeros que mostram o que esta acontecendo agora na simulacao.",
+    how: "Caso real: depois de montar um circuito, o tecnico confere leituras para saber se esta tudo dentro da faixa segura.",
+    when: "Caso real: antes de ligar um aparelho, confira se a saida nao esta alta demais.",
+  },
+  vsRms: {
+    title: "Vs RMS",
+    body: "E o valor pratico da energia que sai do transformador. E parecido com o numero que aparece no multimetro.",
+    how: "Caso real: se uma placa precisa de 12 V, confira se Vs RMS esta perto de 12 V antes de ligar a placa.",
+    when: "Caso real: escolher transformador para fonte, carregador, circuito de comando ou iluminacao.",
+  },
+  powerFactor: {
+    title: "Fator de potencia",
+    body: "Mostra se o aparelho usa bem a energia que recebe. Quanto mais perto de 1, melhor.",
+    how: "Caso real: motores e bobinas costumam baixar o fator de potencia, enquanto resistores ficam perto de 1.",
+    when: "Caso real: quando motores deixam a instalacao mais pesada mesmo sem parecer consumir tanta energia util.",
+  },
+  flux: {
+    title: "Fluxo relativo",
+    body: "E uma medida do magnetismo passando pela parte de ferro. Aqui serve para visualizacao.",
+    how: "Caso real: mais energia de entrada ou frequencia errada podem aumentar demais o magnetismo.",
+    when: "Caso real: investigar aquecimento, barulho e consumo alto mesmo com pouca coisa ligada.",
+  },
+  im: {
+    title: "Corrente Im",
+    body: "E a energia que o transformador usa so para criar magnetismo na parte de ferro, mesmo sem aparelho ligado.",
+    how: "Caso real: ao ligar o transformador na tomada, pode aparecer um pico de Im mesmo sem aparelho na saida.",
+    when: "Caso real: entender por que o disjuntor pode desarmar logo ao ligar.",
+  },
+  saturation: {
+    title: "Saturacao",
+    body: "Mostra se a parte de ferro esta chegando no limite. Quando passa do limite, esquenta e puxa energia demais.",
+    how: "Caso real: se o indicador subir, reduza a energia de entrada ou use um transformador maior/melhor.",
+    when: "Caso real: transformador roncando, aquecendo em vazio ou queimando fusivel pode estar saturando.",
+  },
+  coreHealth: {
+    title: "Estado do nucleo",
+    body: "Resume se a parte de ferro esta tranquila, perdendo energia em calor ou trabalhando no limite.",
+    how: "Caso real: use como semaforo tecnico para saber se o nucleo esta em condicao aceitavel.",
+    when: "Caso real: avaliacao rapida antes de deixar um transformador ligado por muito tempo.",
+  },
+  io: {
+    title: "Entrada / Saida",
+    body: "Compara o que entra no transformador com o que sai dele.",
+  },
+  input: {
+    title: "Entrada",
+    body: "Lado onde a energia entra no transformador. Tambem chamado de lado de entrada.",
+    how: "Caso real: e o lado que voce liga na tomada, gerador ou inversor.",
+    when: "Caso real: conferir se o valor de entrada combina com a etiqueta do transformador.",
+  },
+  output: {
+    title: "Saida",
+    body: "Lado que entrega energia para o aparelho ligado. Tambem chamado de lado de saida.",
+    how: "Caso real: e o lado onde voce liga uma lampada, placa, motor pequeno ou circuito.",
+    when: "Caso real: medir se a energia de saida esta correta antes de ligar o aparelho final.",
+  },
+  diagnostic: {
+    title: "Diagnostico",
+    body: "Olha os ajustes e avisa se algo parece normal, estranho ou perigoso.",
+    how: "Caso real: se aparecer energia alta demais na saida, reduza a entrada ou ajuste a relacao de voltas.",
+    when: "Caso real: quando algo esquenta, zumbe, desarma o disjuntor ou da uma saida errada.",
+  },
+  channels: {
+    title: "Canais",
+    body: "Escolhe quais linhas aparecem no grafico.",
+    how: "Caso real: desligue curvas que nao importam no momento para comparar melhor Vp, Vs, Is ou Im.",
+    when: "Caso real: durante uma medicao com osciloscopio, voce escolhe quais sinais quer enxergar ao mesmo tempo.",
+  },
+  glossary: {
+    title: "Glossario de siglas",
+    body: "Lista rapida das abreviacoes usadas no simulador.",
+    how: "Caso real: ao ler uma etiqueta, manual ou grafico tecnico, use o glossario para traduzir as abreviacoes.",
+    when: "Caso real: quando aparecer Vp, Vs, RMS, FP, VA ou B-H em apostilas, instrumentos ou diagramas.",
+  },
+  vp: {
+    title: "Vp",
+    body: "Vp significa energia do lado de entrada do transformador.",
+    how: "Caso real: medir Vp e como colocar o multimetro no lado que vem da tomada.",
+    when: "Caso real: conferir se o transformador esta recebendo 127 V, 220 V ou outro valor especificado.",
+  },
+  vs: {
+    title: "Vs",
+    body: "Vs significa energia do lado de saida do transformador.",
+    how: "Caso real: medir Vs antes de conectar uma placa evita que uma saida errada queime o circuito.",
+    when: "Caso real: validar a saida de uma fonte, carregador, transformador de campainha ou comando eletrico.",
+  },
+  is: {
+    title: "Is",
+    body: "Is mostra quanta energia esta sendo puxada pelo aparelho ligado na saida.",
+    how: "Caso real: medir Is mostra se o aparelho esta puxando mais do que o transformador aguenta.",
+    when: "Caso real: investigar aquecimento, saida fraca ou transformador sobrecarregado.",
+  },
+  imAcronym: {
+    title: "Im",
+    body: "Im e a energia usada para criar magnetismo na parte de ferro.",
+    how: "Caso real: Im aparece mesmo sem aparelho ligado na saida, porque o ferro precisa virar um ima temporario.",
+    when: "Caso real: entender por que o transformador consome um pouco mesmo sem aparelho ligado.",
+  },
+  phi: {
+    title: "Phi",
+    body: "Phi e uma letra usada para mostrar o magnetismo passando pela parte de ferro.",
+    how: "Caso real: magnetismo alto demais indica risco de saturacao, principalmente com entrada alta ou frequencia errada.",
+    when: "Caso real: analisar por que o nucleo aquece ou por que um transformador nao deve ser usado fora da frequencia correta.",
+  },
+  rms: {
+    title: "RMS",
+    body: "RMS e o numero pratico de uma energia que fica subindo e descendo. E o valor que voce costuma comparar.",
+    how: "Caso real: quando um multimetro mostra 127 V AC, normalmente ele esta mostrando um valor RMS.",
+    when: "Caso real: comparar o numero da tomada, da saida do transformador e da etiqueta do aparelho.",
+  },
+  fp: {
+    title: "FP",
+    body: "FP significa fator de potencia. Ele mostra se o aparelho aproveita bem a energia.",
+    how: "Caso real: um motor pode ter FP baixo; capacitores de correcao ajudam a aproximar o FP de 1.",
+    when: "Caso real: entender por que motores podem pesar mais na instalacao eletrica.",
+  },
+  npns: {
+    title: "Np/Ns",
+    body: "Np e a quantidade de voltas de fio na entrada. Ns e a quantidade de voltas de fio na saida.",
+    how: "Caso real: mais voltas na saida podem aumentar a energia de saida; menos voltas podem diminuir.",
+    when: "Caso real: escolher um transformador para sair de 220 V para 24 V, 12 V ou outro valor.",
+  },
+  hz: {
+    title: "Hz",
+    body: "Hz significa hertz. E quantas vezes por segundo a energia da tomada muda de sentido.",
+    how: "Caso real: confira se o aparelho e 50 Hz ou 60 Hz antes de ligar fora do lugar comum.",
+    when: "Caso real: usar geradores, inversores ou equipamentos importados.",
+  },
+  va: {
+    title: "VA",
+    body: "VA indica o tamanho do aparelho que o transformador consegue alimentar.",
+    how: "Caso real: um transformador de 100 VA nao deve alimentar um aparelho que precisa de 200 VA.",
+    when: "Caso real: escolher o tamanho do transformador para campainha, fonte, comando ou painel eletrico.",
+  },
+  bh: {
+    title: "B-H",
+    body: "B-H e um grafico que mostra como a parte de ferro reage ao magnetismo.",
+    how: "Caso real: materiais melhores tendem a ter curva mais estreita, indicando menos energia perdida em calor.",
+    when: "Caso real: comparar aco silicio, ferrite ou outros materiais magneticos em projeto de nucleo.",
+  },
+  formulas: {
+    title: "Equacoes ativas",
+    body: "Mostra, de forma resumida, quais regras o simulador esta usando.",
+    how: "Caso real: em aula ou relatorio, use as formulas para ligar o comportamento visual com a teoria eletrica.",
+    when: "Caso real: entender por que a energia muda de valor entre entrada e saida.",
+  },
+  primaryCoil: {
+    title: "Primario",
+    body: "Bobina de entrada. Ela recebe a energia da tomada e cria magnetismo na parte de ferro.",
+    how: "Caso real: conecte esse lado no valor indicado na etiqueta, como 127 V ou 220 V.",
+    when: "Caso real: identificar os fios de entrada antes de ligar o transformador.",
+  },
+  coreVisual: {
+    title: "Nucleo ferromagnetico",
+    body: "Caminho de ferro por onde o magnetismo passa. Quando brilha mais, tem mais magnetismo ali.",
+    how: "Caso real: nucleo maior ou melhor suporta mais fluxo antes de saturar.",
+    when: "Caso real: investigar aquecimento, vibracao mecanica ou ruido de transformador.",
+  },
+  secondaryCoil: {
+    title: "Secundario",
+    body: "Bobina de saida. Ela recebe energia pelo magnetismo e entrega para o aparelho ligado.",
+    how: "Caso real: conecte o aparelho nesse lado so depois de conferir se a saida esta correta.",
+    when: "Caso real: alimentar lampadas pequenas, placas, comandos ou motores pequenos.",
+  },
+};
+
+for (const item of Object.values(HELP_CONTENT)) {
+  item.how ??= DEFAULT_USAGE.how;
+  item.when ??= DEFAULT_USAGE.when;
+}

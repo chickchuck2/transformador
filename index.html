@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TransFlux 360</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="stage" aria-label="Simulador visual de transformador">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Laboratorio eletromagnetico</p>
+            <h1 data-help="app">TransFlux 360</h1>
+          </div>
+          <button id="toggleRun" class="icon-button" type="button" aria-label="Pausar simulacao" title="Pausar simulacao">
+            <span aria-hidden="true">||</span>
+          </button>
+        </header>
+
+        <div class="canvas-frame">
+          <div class="canvas-help-bar" aria-label="Ajuda da simulacao visual">
+            <span data-help="simulation">Simulacao</span>
+            <span data-help="primaryCoil">Primario</span>
+            <span data-help="coreVisual">Nucleo</span>
+            <span data-help="secondaryCoil">Secundario</span>
+          </div>
+          <canvas id="simulationCanvas" aria-label="Animacao de fluxo magnetico e eletrons"></canvas>
+        </div>
+
+        <div class="scope-frame">
+          <div class="canvas-help-bar scope-help" aria-label="Ajuda do osciloscopio">
+            <span data-help="oscilloscope">Osciloscopio</span>
+          </div>
+          <canvas id="scopeCanvas" aria-label="Osciloscopio digital"></canvas>
+        </div>
+      </section>
+
+      <aside class="control-panel" aria-label="Controles do simulador">
+        <section class="panel-section">
+          <h2 data-help="system">Sistema</h2>
+          <div class="segmented" role="group" aria-label="Modo de fase">
+            <button class="segment active" type="button" data-phase-mode="single" title="Monofasico: uma onda eletrica.">Mono</button>
+            <button class="segment" type="button" data-phase-mode="three" title="Trifasico: tres ondas eletricas defasadas.">Tri</button>
+          </div>
+          <div class="sound-row">
+            <label class="toggle-line">
+              <input id="audioEnabled" type="checkbox" />
+              <span data-help="sound">Som intuitivo</span>
+            </label>
+            <label class="volume-control" aria-label="Volume do som intuitivo">
+              <span>Vol.</span>
+              <input id="audioVolume" type="range" min="0" max="1" step="0.01" value="0.35" />
+            </label>
+          </div>
+        </section>
+
+        <section class="panel-section control-stack">
+          <h2 data-help="parameters">Parametros</h2>
+          <label class="control-row">
+            <span data-help="primaryVoltage">Tensao primaria</span>
+            <output id="voltageValue">127 V</output>
+            <input id="voltage" type="range" min="50" max="440" step="1" value="127" />
+          </label>
+          <label class="control-row">
+            <span data-help="frequency">Frequencia</span>
+            <output id="frequencyValue">60 Hz</output>
+            <input id="frequency" type="range" min="10" max="120" step="1" value="60" />
+          </label>
+          <label class="control-row">
+            <span>Relacao <span data-help="npns">Np/Ns</span></span>
+            <output id="turnsRatioValue">1.00</output>
+            <input id="turnsRatio" type="range" min="0.25" max="4" step="0.05" value="1" />
+          </label>
+          <label class="control-row">
+            <span data-help="zoom">Zoom visual</span>
+            <output id="zoomValue">1.00</output>
+            <input id="zoom" type="range" min="0.75" max="1.25" step="0.01" value="1" />
+          </label>
+        </section>
+
+        <section class="panel-section control-stack">
+          <h2 data-help="core">Nucleo</h2>
+          <label class="control-row">
+            <span data-help="permeability">Permeabilidade</span>
+            <output id="corePermeabilityValue">0.78</output>
+            <input id="corePermeability" type="range" min="0.25" max="1" step="0.01" value="0.78" />
+          </label>
+          <label class="control-row">
+            <span data-help="saturationKnee">Joelho de saturacao</span>
+            <output id="coreSaturationValue">0.82</output>
+            <input id="coreSaturation" type="range" min="0.35" max="1.15" step="0.01" value="0.82" />
+          </label>
+          <label class="control-row">
+            <span data-help="hysteresis">Histerese</span>
+            <output id="hysteresisValue">0.28</output>
+            <input id="hysteresis" type="range" min="0" max="0.8" step="0.01" value="0.28" />
+          </label>
+        </section>
+
+        <section class="panel-section">
+          <h2 data-help="load">Carga</h2>
+          <div class="segmented vertical" role="group" aria-label="Tipo de carga">
+            <button class="segment" type="button" data-load-type="open" title="Aberta: nada ligado na saida.">Aberta</button>
+            <button class="segment active" type="button" data-load-type="resistive" title="Resistiva: corrente e tensao andam juntas.">Resistiva</button>
+            <button class="segment" type="button" data-load-type="inductive" title="Indutiva: corrente atrasa em relacao a tensao.">Indutiva</button>
+          </div>
+        </section>
+
+        <section class="panel-section metrics" aria-live="polite">
+          <h2 data-help="readings">Leituras</h2>
+          <dl>
+            <div><dt><span data-help="vs">Vs</span> <span data-help="rms">RMS</span></dt><dd id="secondaryVoltage">127 V</dd></div>
+            <div><dt data-help="powerFactor">Fator de potencia</dt><dd id="powerFactor">1.00</dd></div>
+            <div><dt data-help="flux">Fluxo relativo</dt><dd id="fluxValue">0.00</dd></div>
+            <div><dt>Corrente <span data-help="imAcronym">Im</span></dt><dd id="magnetizingCurrent">0.00</dd></div>
+            <div><dt data-help="saturation">Saturacao</dt><dd id="saturationValue">0%</dd></div>
+            <div><dt data-help="coreHealth">Estado do nucleo</dt><dd id="coreHealth">Estavel</dd></div>
+          </dl>
+        </section>
+
+        <section class="panel-section io-grid" aria-live="polite">
+          <h2 data-help="io">Entrada / Saida</h2>
+          <div class="io-card">
+            <span data-help="input">Entrada</span>
+            <strong id="inputSummary">127 V | 60 Hz</strong>
+            <small id="inputDetail">1 fase | Estavel</small>
+          </div>
+          <div class="io-card">
+            <span data-help="output">Saida</span>
+            <strong id="outputSummary">127 V | Is 0.00</strong>
+            <small id="outputDetail">FP 1.00 | S 0 VA</small>
+          </div>
+        </section>
+
+        <section class="panel-section diagnostics-panel" aria-live="polite">
+          <h2 data-help="diagnostic">Diagnostico</h2>
+          <div id="statusBadge" class="status-badge ok">Operacao estavel</div>
+          <ul id="diagnosticsList" class="diagnostics-list"></ul>
+        </section>
+
+        <section class="panel-section">
+          <h2 data-help="channels">Canais</h2>
+          <div class="channel-grid" aria-label="Canais do osciloscopio">
+            <label><input type="checkbox" data-channel="vp" checked /> <span data-help="vp">Vp</span></label>
+            <label><input type="checkbox" data-channel="vs" checked /> <span data-help="vs">Vs</span></label>
+            <label><input type="checkbox" data-channel="is" checked /> <span data-help="is">Is</span></label>
+            <label><input type="checkbox" data-channel="phi" checked /> <span data-help="phi">Phi</span></label>
+            <label><input type="checkbox" data-channel="im" checked /> <span data-help="imAcronym">Im</span></label>
+          </div>
+        </section>
+
+        <section class="panel-section glossary-panel">
+          <h2 data-help="glossary">Glossario</h2>
+          <dl>
+            <div><dt data-help="vp">Vp</dt><dd>Tensao de entrada</dd></div>
+            <div><dt data-help="vs">Vs</dt><dd>Tensao de saida</dd></div>
+            <div><dt data-help="is">Is</dt><dd>Corrente da saida</dd></div>
+            <div><dt data-help="imAcronym">Im</dt><dd>Corrente magnetizante</dd></div>
+            <div><dt data-help="phi">Phi</dt><dd>Fluxo magnetico</dd></div>
+            <div><dt data-help="rms">RMS</dt><dd>Valor util da onda</dd></div>
+            <div><dt data-help="fp">FP</dt><dd>Fator de potencia</dd></div>
+            <div><dt data-help="hz">Hz</dt><dd>Ciclos por segundo</dd></div>
+            <div><dt data-help="va">VA</dt><dd>Potencia aparente</dd></div>
+            <div><dt data-help="bh">B-H</dt><dd>Curva magnetica</dd></div>
+          </dl>
+        </section>
+
+        <section class="panel-section formula-box">
+          <h2 data-help="formulas">Equacoes ativas</h2>
+          <p id="formulaMode">V(t) = Vm sen(wt)</p>
+          <p id="formulaLoad">I(t) em fase com Vs(t)</p>
+          <p id="formulaFlux">Phi(t) atrasa V(t) em 90 graus</p>
+          <p id="formulaCore">Nucleo: histerese e saturacao</p>
+        </section>
+      </aside>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
