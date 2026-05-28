@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apresentação completa sobre Transformadores Elétricos: como funcionam, tipos, aplicações, fórmulas e muito mais.">
+  <title>Transformadores Elétricos — Apresentação Completa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- ── HEADER ─────────────────────────────────────────── -->
+    <header id="header">
+      <div id="header-title">
+        <span class="bolt">⚡</span>
+        Transformadores Elétricos
+      </div>
+      <div id="slide-counter">1 / 19</div>
+    </header>
+
+    <!-- ── SIDEBAR ────────────────────────────────────────── -->
+    <nav id="sidebar" aria-label="Navegação de slides">
+      <!-- preenchido via JS -->
+    </nav>
+
+    <!-- ── CONTEÚDO PRINCIPAL ─────────────────────────────── -->
+    <main id="main" role="main">
+      <div id="slide-view" aria-live="polite">
+        <!-- slide ativo renderizado via JS -->
+      </div>
+    </main>
+
+    <!-- ── FOOTER / CONTROLES ─────────────────────────────── -->
+    <footer id="footer">
+      <button id="btn-prev" class="nav-btn" aria-label="Slide anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Anterior
+      </button>
+
+      <div id="progress-bar" role="progressbar" aria-valuemin="1" aria-valuemax="19" aria-valuenow="1">
+        <div id="progress-fill"></div>
+      </div>
+
+      <div class="kb-hint">
+        <kbd class="kb-key">←</kbd>
+        <kbd class="kb-key">→</kbd>
+        <span>navegar</span>
+      </div>
+
+      <button id="btn-next" class="nav-btn" aria-label="Próximo slide">
+        Próximo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+    </footer>
+
+  </div><!-- #app -->
+
+  <script src="slides.js"></script>
+</body>
+</html>

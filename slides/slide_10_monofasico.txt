@@ -1,0 +1,42 @@
+====================================
+SLIDE 10 — TRANSFORMADOR MONOFÁSICO
+====================================
+
+TÍTULO:
+Transformador Monofásico
+
+DESCRIÇÃO:
+Opera com uma única linha de fase (e neutro, ou duas fases).
+Ideal para demandas menores de energia.
+
+VANTAGENS:
+  ✅ Custo inicial menor
+     → Menos material (cobre e ferro) na fabricação.
+
+  ✅ Manutenção simplificada
+     → Estrutura mais simples: reparo e substituição mais rápidos.
+
+  ✅ Versatilidade rural
+     → Muito utilizado em redes de distribuição rural,
+       onde a carga é dispersa e o consumo é menor.
+
+DESVANTAGENS:
+  ❌ Baixa capacidade de potência
+     → Não adequado para grandes indústrias ou alta potência.
+
+  ❌ Potência pulsante
+     → A energia fornecida tem oscilações inerentes,
+       não ideal para motores industriais de grande porte.
+
+  ❌ Maior volume para alta potência
+     → Para atingir a potência de um trifásico,
+       seriam necessários vários monofásicos em banco,
+       ocupando mais espaço.
+
+APLICAÇÕES TÍPICAS:
+  • Redes de distribuição secundária (127 V / 220 V residencial)
+  • Isolamento e segurança em circuitos sensíveis
+  • Autotransformadores domésticos (adaptadores de tensão)
+  • Iluminação pública em postes
+  • Eletrônicos e aparelhos domésticos
+

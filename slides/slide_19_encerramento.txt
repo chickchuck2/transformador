@@ -1,0 +1,44 @@
+====================================
+SLIDE 19 — ENCERRAMENTO / FINALIZAÇÃO
+====================================
+
+TÍTULO:
+Conclusão
+
+SUBTÍTULO:
+Transformadores: o coração invisível do mundo elétrico
+
+TEXTO DE FECHAMENTO:
+
+  Os transformadores são dispositivos simples em conceito,
+  mas extraordinários em importância.
+
+  Sem eles, seria impossível:
+  • Transmitir energia elétrica de usinas para cidades distantes.
+  • Alimentar com segurança todos os aparelhos do nosso dia a dia.
+  • Sustentar a infraestrutura elétrica de hospitais, indústrias e residências.
+
+  O princípio que os governa — a indução eletromagnética de Faraday —
+  foi descoberto há quase 200 anos e ainda é a base de toda
+  a rede elétrica do planeta.
+
+  Entender como um transformador funciona é entender
+  como a energia chega até você.
+
+────────────────────────────────────────
+
+CITAÇÃO FINAL (opcional para slide):
+  "A eletricidade é a ferramenta mais poderosa que a humanidade já criou.
+   O transformador é o que a torna utilizável."
+
+────────────────────────────────────────
+
+CRÉDITOS / REFERÊNCIAS:
+  • Brasil Escola — brasilescola.uol.com.br
+  • Toda Matéria — todamateria.com.br
+  • Canal YouTube: Mentalidade De Engenharia
+
+====================================
+FIM DA APRESENTAÇÃO
+====================================
+

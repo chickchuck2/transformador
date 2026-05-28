@@ -1,0 +1,35 @@
+====================================
+SLIDE 07 — POR QUE NÃO FUNCIONA COM CORRENTE CONTÍNUA?
+====================================
+
+TÍTULO:
+Por que Transformadores NÃO Funcionam com CC?
+
+SUBTÍTULO:
+Corrente Contínua vs. Corrente Alternada
+
+PARTE 1 — COM CORRENTE ALTERNADA (CA) ✅
+
+  • A corrente muda de direção e intensidade 60 vezes por segundo (no Brasil).
+  • Isso cria um campo magnético que varia constantemente.
+  • O campo variável "corta" as espiras do secundário e induz nova tensão.
+
+  RESUMO: Corrente variável → Campo magnético variável → Indução ✅
+
+PARTE 2 — COM CORRENTE CONTÍNUA (CC) ⛔
+
+  • A corrente CC é constante: valor estável, sempre na mesma direção.
+  • Ao ligar CC no primário:
+      1. No instante inicial há uma pequena variação (surge brevíssima tensão).
+      2. Logo em seguida, a corrente se estabiliza.
+      3. Campo magnético estático não induz tensão no secundário.
+      4. Resultado: nenhuma transferência de energia.
+
+  RESUMO: Corrente fixa → Campo magnético fixo → Sem indução ⛔
+
+⚠️ RISCO ADICIONAL COM CC:
+  O enrolamento primário tem baixa resistência elétrica.
+  Com CA, a variação magnética cria uma "resistência magnética" (reatância)
+  que limita a corrente. Com CC, isso não existe:
+  → Corrente altíssima → fio superaquece → isolamento derrete → curto ou incêndio.
+

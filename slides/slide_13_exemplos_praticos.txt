@@ -1,0 +1,44 @@
+====================================
+SLIDE 13 — EXEMPLOS PRÁTICOS DE APLICAÇÃO
+====================================
+
+TÍTULO:
+Transformadores na Prática
+
+SUBTÍTULO:
+De onde vem a energia que usamos todos os dias?
+
+EXEMPLO 1 — TRANSFORMADOR DE REDE DE DISTRIBUIÇÃO
+  📍 Onde: Postes, subestações, ruas das cidades.
+  ⚙️  Função: Abaixa a tensão das linhas de transmissão
+            (ex: 13.800 V) para a tensão residencial/comercial
+            (127 V ou 220 V).
+  📋 Tipo: Abaixador.
+
+────────────────────────────────────────
+
+EXEMPLO 2 — CARREGADORES E APARELHOS ELETRÔNICOS
+  📍 Onde: Carregadores de celular, notebooks, roteadores.
+  ⚙️  Função: Reduz a tensão da tomada (127 V / 220 V) para
+            valores seguros ao circuito interno do aparelho
+            (ex: 5 V, 12 V, 19 V).
+  📋 Tipo: Abaixador.
+
+────────────────────────────────────────
+
+EXEMPLO 3 — USINAS DE GERAÇÃO DE ENERGIA
+  📍 Onde: Saída de usinas hidrelétricas, termelétricas e eólicas.
+  ⚙️  Função: Eleva a tensão gerada (ex: 13,8 kV) para valores
+            altíssimos de transmissão (138 kV, 230 kV, 500 kV).
+            Isso reduz a corrente e, consequentemente, as perdas
+            de energia ao longo das linhas de transmissão.
+  📋 Tipo: Elevador.
+
+────────────────────────────────────────
+
+EXEMPLO 4 — TRANSFORMADOR DE ISOLAMENTO
+  📍 Onde: Equipamentos médicos, laboratórios, indústrias.
+  ⚙️  Função: Mantém a mesma tensão, mas separa eletricamente
+            os dois circuitos, aumentando a segurança contra choques.
+  📋 Tipo: Relação 1:1 (isolamento).
+

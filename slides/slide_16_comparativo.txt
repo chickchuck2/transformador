@@ -1,0 +1,36 @@
+====================================
+SLIDE 16 — COMPARATIVO: MONOFÁSICO vs. TRIFÁSICO
+====================================
+
+TÍTULO:
+Monofásico × Trifásico
+
+SUBTÍTULO:
+Qual escolher e quando?
+
+╔══════════════════╦════════════════════════╦════════════════════════╗
+║ CRITÉRIO         ║ MONOFÁSICO             ║ TRIFÁSICO              ║
+╠══════════════════╬════════════════════════╬════════════════════════╣
+║ Fases            ║ 1 fase (+ neutro)      ║ 3 fases               ║
+╠══════════════════╬════════════════════════╬════════════════════════╣
+║ Potência         ║ Menor porte            ║ Alta potência          ║
+╠══════════════════╬════════════════════════╬════════════════════════╣
+║ Eficiência       ║ Adequada para baixa    ║ Superior para alta     ║
+║                  ║ demanda                ║ demanda                ║
+╠══════════════════╬════════════════════════╬════════════════════════╣
+║ Custo inicial    ║ Menor                  ║ Maior                  ║
+╠══════════════════╬════════════════════════╬════════════════════════╣
+║ Manutenção       ║ Simples e acessível    ║ Exige técnico          ║
+║                  ║                        ║ especializado          ║
+╠══════════════════╬════════════════════════╬════════════════════════╣
+║ Tamanho          ║ Compacto (unitário)    ║ Compacto para mesma    ║
+║                  ║                        ║ alta potência          ║
+╠══════════════════╬════════════════════════╬════════════════════════╣
+║ Aplicação ideal  ║ Residências, pequenos  ║ Indústrias, grandes    ║
+║                  ║ comércios, rural       ║ redes, transmissão     ║
+╚══════════════════╩════════════════════════╩════════════════════════╝
+
+REGRA GERAL:
+  → Para uso residencial e pequenos negócios: MONOFÁSICO
+  → Para indústrias, motores e alta potência: TRIFÁSICO
+

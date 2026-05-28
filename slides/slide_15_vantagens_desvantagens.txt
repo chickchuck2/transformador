@@ -1,0 +1,48 @@
+====================================
+SLIDE 15 — VANTAGENS E DESVANTAGENS
+====================================
+
+TÍTULO:
+Vantagens e Desvantagens dos Transformadores
+
+VANTAGENS ✅
+
+  ✅ Alta Eficiência
+     → Perdas muito pequenas: modelos grandes atingem 95–98% de rendimento.
+     → Quase toda a energia de entrada é entregue na saída.
+
+  ✅ Sem Partes Móveis
+     → Não há engrenagens, eixos ou mecanismos que se desgastem.
+     → Pouca manutenção, vida útil longa e alta confiabilidade.
+
+  ✅ Fácil Ajuste de Tensão
+     → Permite transmitir energia a longas distâncias com pouca perda.
+     → Adapta a tensão para qualquer aplicação específica.
+
+  ✅ Segurança Elétrica
+     → Isola circuitos elétricos, reduzindo riscos de choque.
+
+  ✅ Custo-Benefício
+     → Barato em relação à sua função essencial na infraestrutura elétrica.
+
+────────────────────────────────────────
+
+DESVANTAGENS ❌
+
+  ❌ Funciona Apenas com CA
+     → Inútil para corrente contínua; ligar CC pode queimar o equipamento.
+
+  ❌ Perdas Existentes
+     → Apesar de pequenas, existem perdas magnéticas (no núcleo)
+       e elétricas (resistência dos fios/enrolamentos).
+
+  ❌ Tamanho e Peso
+     → Grandes transformadores são volumosos e muito pesados.
+
+  ❌ Risco do Meio Isolante
+     → Muitos modelos usam óleo isolante, que pode vazar
+       e causar risco ambiental ou incêndio.
+
+  ❌ Sensibilidade a Sobrecargas
+     → Corrente acima do limite provoca superaquecimento e danos permanentes.
+

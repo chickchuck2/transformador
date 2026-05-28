@@ -1,0 +1,22 @@
+====================================
+SLIDE 02 — O QUE É UM TRANSFORMADOR?
+====================================
+
+TÍTULO:
+O que é um Transformador?
+
+TEXTO PRINCIPAL:
+Um transformador é um dispositivo elétrico estático que transfere energia
+elétrica entre dois ou mais circuitos, alterando os níveis de tensão e
+corrente — sem mudar a frequência e sem contato elétrico direto.
+
+DESTAQUES (bullets):
+• Funciona exclusivamente com Corrente Alternada (CA)
+• Utiliza o princípio da indução eletromagnética
+• Não possui partes móveis
+• Mantém praticamente a mesma potência entre entrada e saída
+
+NOTA DE RODAPÉ:
+A potência de entrada é praticamente igual à de saída —
+apenas a tensão e a corrente se transformam.
+

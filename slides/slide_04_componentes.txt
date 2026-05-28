@@ -1,0 +1,37 @@
+====================================
+SLIDE 04 — COMPONENTES PRINCIPAIS
+====================================
+
+TÍTULO:
+Estrutura Interna do Transformador
+
+TEXTO INTRODUTÓRIO:
+Um transformador é formado por componentes simples, mas de alta precisão.
+Cada peça tem um papel essencial no processo de transferência de energia.
+
+COMPONENTES (lista detalhada):
+
+1. NÚCLEO MAGNÉTICO
+   → Feito de chapas de aço silício empilhadas.
+   → Concentra, guia e conduz o fluxo magnético entre os enrolamentos.
+   → Reduz as perdas de energia por dispersão.
+
+2. ENROLAMENTO PRIMÁRIO
+   → Conectado à fonte de energia (entrada).
+   → Recebe a tensão de entrada e cria o campo magnético variável.
+
+3. ENROLAMENTO SECUNDÁRIO
+   → Conectado à carga (saída).
+   → Recebe o fluxo magnético e entrega a energia com nova tensão.
+
+4. ISOLAMENTO
+   → Materiais especiais entre fios, enrolamentos e núcleo.
+   → Evita curtos-circuitos e garante segurança elétrica.
+
+5. CAIXA E MEIO ISOLANTE
+   → Geralmente com óleo isolante.
+   → Resfria internamente e protege contra umidade e danos mecânicos.
+
+6. TERMINAIS / CONECTORES
+   → Pontos físicos de ligação com a rede elétrica ou a carga.
+

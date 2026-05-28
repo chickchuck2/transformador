@@ -1,0 +1,40 @@
+====================================
+SLIDE 06 — FÓRMULA E RELAÇÃO DE TRANSFORMAÇÃO
+====================================
+
+TÍTULO:
+A Fórmula Chave dos Transformadores
+
+SUBTÍTULO:
+Relação de Transformação (k)
+
+FÓRMULA PRINCIPAL:
+  k = N1 / N2 = V1 / V2 = I2 / I1
+
+LEGENDA:
+  k  = relação de transformação
+  N1 = número de espiras do primário
+  N2 = número de espiras do secundário
+  V1 = tensão no primário (entrada)
+  V2 = tensão no secundário (saída)
+  I1 = corrente no primário
+  I2 = corrente no secundário
+
+INTERPRETAÇÃO DOS RESULTADOS:
+
+  k > 1  →  Secundário tem MENOS espiras que o primário
+            → Tensão de saída MENOR
+            → Transformador ABAIXADOR
+
+  k < 1  →  Secundário tem MAIS espiras que o primário
+            → Tensão de saída MAIOR
+            → Transformador ELEVADOR
+
+  k = 1  →  Mesma quantidade de espiras nos dois lados
+            → Tensão igual na entrada e na saída
+            → Transformador de ISOLAMENTO
+
+PRINCÍPIO DA CONSERVAÇÃO DE ENERGIA:
+  A potência de entrada ≈ potência de saída
+  (P = V × I — quando a tensão sobe, a corrente cai, e vice-versa)
+

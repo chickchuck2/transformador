@@ -1,0 +1,37 @@
+====================================
+SLIDE 05 — COMO FUNCIONA (PASSO A PASSO)
+====================================
+
+TÍTULO:
+Como o Transformador Funciona?
+
+SUBTÍTULO:
+O Fluxo Completo de Operação
+
+PASSO A PASSO:
+
+PASSO 1 — ENTRADA
+  Energia em corrente alternada (CA) é aplicada no enrolamento primário.
+
+PASSO 2 — CONVERSÃO ELETROMAGNÉTICA
+  Energia elétrica → energia magnética.
+  A corrente alternada no primário cria um campo magnético variável
+  que cresce, diminui e inverte constantemente.
+
+PASSO 3 — TRANSFERÊNCIA PELO NÚCLEO
+  O campo magnético variável se propaga pelo núcleo e alcança
+  o enrolamento secundário, cortando suas espiras.
+
+PASSO 4 — RECONVERSÃO
+  Energia magnética → energia elétrica.
+  A variação do campo induz uma nova tensão no enrolamento secundário,
+  com valor proporcional ao número de espiras.
+
+PASSO 5 — SAÍDA
+  A energia é entregue ao circuito ou carga conectada ao secundário,
+  com tensão e corrente adequadas ao uso.
+
+DETALHE IMPORTANTE:
+  Não há contato elétrico direto entre primário e secundário.
+  A transferência ocorre APENAS por campo magnético.
+

@@ -1,0 +1,49 @@
+====================================
+SLIDE 12 — LIGAÇÕES EM TRIFÁSICOS: ESTRELA E TRIÂNGULO
+====================================
+
+TÍTULO:
+Tipos de Ligação em Transformadores Trifásicos
+
+SUBTÍTULO:
+Estrela (Y) e Triângulo (Δ)
+
+LIGAÇÃO ESTRELA (Y):
+
+  COMO FUNCIONA:
+    → Uma ponta de cada enrolamento é ligada em um ponto comum (neutro).
+    → As outras pontas formam as três saídas de fase.
+
+  VANTAGEM PRINCIPAL:
+    → Permite obter DUAS tensões diferentes:
+      • Tensão fase-fase  (ex: 220 V)
+      • Tensão fase-neutro (ex: 127 V)
+
+  USO TÍPICO:
+    → Redes de distribuição para residências e comércios.
+
+────────────────────────────────────────
+
+LIGAÇÃO TRIÂNGULO (Δ):
+
+  COMO FUNCIONA:
+    → Os enrolamentos são ligados em sequência, formando um triângulo fechado.
+    → Não há ponto neutro.
+
+  CARACTERÍSTICA PRINCIPAL:
+    → Só existe tensão entre fases (sem tensão fase-neutro).
+
+  USO TÍPICO:
+    → Transmissão de energia e aplicações industriais
+      que não necessitam de neutro.
+
+────────────────────────────────────────
+
+LIGAÇÕES COMBINADAS:
+  Estrela-Triângulo (Y-Δ), Triângulo-Estrela (Δ-Y) e outras combinações
+  são usadas para ajustar tensões e atender necessidades específicas da rede.
+
+MONOFÁSICOS:
+  Ligação simples: entrada no primário, saída no secundário,
+  conforme a relação de espiras definida.
+

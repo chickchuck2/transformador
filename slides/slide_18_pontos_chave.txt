@@ -1,0 +1,43 @@
+====================================
+SLIDE 18 — PONTOS-CHAVE PARA FIXAÇÃO
+====================================
+
+TÍTULO:
+Pontos-Chave para Fixar
+
+SUBTÍTULO:
+O essencial que você precisa saber sobre transformadores
+
+RESUMO DOS CONCEITOS FUNDAMENTAIS:
+
+  1️⃣  Um transformador transfere energia elétrica entre circuitos
+      sem contato físico — apenas por indução eletromagnética.
+
+  2️⃣  Funciona EXCLUSIVAMENTE com Corrente Alternada (CA).
+      Corrente Contínua (CC) não produz variação de campo → sem indução.
+
+  3️⃣  A fórmula central é:
+      k = N1/N2 = V1/V2 = I2/I1
+      → Mais espiras no secundário = tensão maior (elevador)
+      → Menos espiras no secundário = tensão menor (abaixador)
+
+  4️⃣  A potência é praticamente conservada:
+      quando a tensão aumenta, a corrente diminui — e vice-versa.
+
+  5️⃣  Monofásico = uso residencial e simples.
+      Trifásico = uso industrial e de alta potência.
+
+  6️⃣  As ligações em Estrela (Y) e Triângulo (Δ) definem
+      as tensões disponíveis nos transformadores trifásicos.
+
+  7️⃣  Transformadores estão em todas as etapas do sistema elétrico:
+      geração → transmissão → distribuição → uso final.
+
+  8️⃣  São altamente eficientes (95–98%) e não têm partes móveis.
+
+  9️⃣  Ligar corrente contínua em um transformador pode causar
+      superaquecimento e destruição do equipamento.
+
+  🔟  São invisíveis no cotidiano, mas absolutamente essenciais
+      para que a civilização moderna funcione.
+

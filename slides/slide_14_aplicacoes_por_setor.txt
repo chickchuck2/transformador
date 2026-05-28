@@ -1,0 +1,38 @@
+====================================
+SLIDE 14 — APLICAÇÕES POR SETOR
+====================================
+
+TÍTULO:
+Onde os Transformadores São Usados?
+
+SUBTÍTULO:
+Presença essencial em toda infraestrutura elétrica moderna
+
+TRANSMISSÃO DE ENERGIA ⚡
+  → Elevadores sobem a tensão para 138 kV, 230 kV ou 500 kV.
+  → Permite transportar energia por centenas de quilômetros
+    com mínimas perdas nos cabos.
+
+DISTRIBUIÇÃO URBANA 🏙️
+  → Subestações e transformadores de poste abaixam a tensão
+    de 13,8 kV para 127 V / 220 V.
+  → Alimenta residências, comércios e estabelecimentos públicos.
+
+EQUIPAMENTOS ELETRÔNICOS 📱
+  → Fontes de alimentação, carregadores e adaptadores.
+  → Reduzem a tensão da tomada para valores baixos e seguros
+    (5 V, 12 V, 19 V etc.).
+
+ISOLAMENTO ELÉTRICO 🏥
+  → Equipa hospitais, laboratórios e ambientes críticos.
+  → Separa circuitos para eliminar risco de choque elétrico.
+
+INDÚSTRIA 🏭
+  → Alimenta motores, máquinas e sistemas de automação
+    com os níveis de tensão exatos que cada equipamento exige.
+
+MEDIÇÃO E PROTEÇÃO 📊
+  → Transformadores de corrente (TC) e de tensão (TP)
+    operam em medidores de energia e relés de proteção,
+    monitorando e protegendo os sistemas elétricos.
+

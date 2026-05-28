@@ -1,0 +1,41 @@
+====================================
+SLIDE 09 — TIPOS DE TRANSFORMADORES (VISÃO GERAL)
+====================================
+
+TÍTULO:
+Tipos de Transformadores
+
+SUBTÍTULO:
+Classificação por Função e por Sistema Elétrico
+
+CLASSIFICAÇÃO POR FUNÇÃO:
+
+  ⬆️ ELEVADOR
+     Aumenta a tensão de saída em relação à entrada.
+     → Secundário tem MAIS espiras que o primário.
+     → Exemplo: saída de usinas elétricas.
+
+  ⬇️ ABAIXADOR
+     Reduz a tensão de saída em relação à entrada.
+     → Secundário tem MENOS espiras que o primário.
+     → Exemplos: postes de distribuição, carregadores.
+
+  🔄 ISOLAMENTO (1:1)
+     Mantém a mesma tensão, mas separa eletricamente os circuitos.
+     → Primário e secundário com o mesmo número de espiras.
+     → Exemplos: equipamentos médicos, laboratórios.
+
+CLASSIFICAÇÃO POR SISTEMA ELÉTRICO:
+
+  MONOFÁSICO
+  → Opera com uma única fase (+ neutro ou + outra fase).
+  → Menor porte. Uso residencial e comercial simples.
+
+  TRIFÁSICO
+  → Opera com três fases defasadas em 120° entre si.
+  → Maior potência. Uso industrial e transmissão de energia.
+
+NOTA:
+  Todos os tipos seguem a mesma regra fundamental:
+  só funcionam com Corrente Alternada.
+

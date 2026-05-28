@@ -14,9 +14,22 @@
             <p class="eyebrow">Laboratorio eletromagnetico</p>
             <h1 data-help="app">TransFlux 360</h1>
           </div>
-          <button id="toggleRun" class="icon-button" type="button" aria-label="Pausar simulacao" title="Pausar simulacao">
-            <span aria-hidden="true">||</span>
-          </button>
+          <div style="display:flex;align-items:center;gap:10px">
+            <a href="./website/index.html" target="_blank" rel="noopener"
+               style="display:inline-flex;align-items:center;gap:8px;padding:7px 16px;
+                      background:rgba(0,212,255,0.12);border:1px solid rgba(0,212,255,0.35);
+                      border-radius:8px;color:#00D4FF;font-size:0.82rem;font-weight:600;
+                      text-decoration:none;letter-spacing:0.03em;transition:background 0.2s,box-shadow 0.2s;
+                      font-family:inherit"
+               onmouseover="this.style.background='rgba(0,212,255,0.22)';this.style.boxShadow='0 0 14px rgba(0,212,255,0.3)'"
+               onmouseout="this.style.background='rgba(0,212,255,0.12)';this.style.boxShadow='none'"
+               title="Abrir apresentação completa">
+              <span aria-hidden="true">📖</span> Ver Slides
+            </a>
+            <button id="toggleRun" class="icon-button" type="button" aria-label="Pausar simulacao" title="Pausar simulacao">
+              <span aria-hidden="true">||</span>
+            </button>
+          </div>
         </header>
 
         <div class="canvas-frame">

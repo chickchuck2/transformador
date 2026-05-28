@@ -1,0 +1,44 @@
+====================================
+SLIDE 17 — RESUMO VISUAL: O CAMINHO DA ENERGIA
+====================================
+
+TÍTULO:
+O Caminho da Energia Elétrica
+
+SUBTÍTULO:
+Do ponto de geração até a sua tomada
+
+FLUXO ESQUEMÁTICO:
+
+  🏭 USINA DE GERAÇÃO
+     (Gera energia a ~13,8 kV)
+           │
+           ▼
+  ⬆️ TRANSFORMADOR ELEVADOR
+     (Sobe para 138 kV / 230 kV / 500 kV)
+           │
+           ▼
+  ⚡ LINHAS DE TRANSMISSÃO
+     (Alta tensão percorre centenas de km com pouca perda)
+           │
+           ▼
+  🏢 SUBESTAÇÃO DE DISTRIBUIÇÃO
+     (Reduz para ~13,8 kV — média tensão)
+           │
+           ▼
+  ⬇️ TRANSFORMADOR DE POSTE / DISTRIBUIÇÃO
+     (Abaixa para 127 V ou 220 V — baixa tensão)
+           │
+           ▼
+  🏠 RESIDÊNCIAS, COMÉRCIOS E INDÚSTRIAS
+     (Energia pronta para uso seguro)
+           │
+           ▼
+  📱 CARREGADORES E FONTES
+     (Reduzem ainda mais: 5 V, 12 V, 19 V para os aparelhos)
+
+MORAL DO FLUXO:
+  Os transformadores estão em CADA etapa deste caminho.
+  Sem eles, seria impossível transmitir energia elétrica
+  de forma eficiente e segura em larga escala.
+

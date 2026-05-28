@@ -1,0 +1,39 @@
+====================================
+SLIDE 08 — ANALOGIA: CA vs. CC
+====================================
+
+TÍTULO:
+Entendendo com uma Analogia
+
+SUBTÍTULO:
+Corrente Alternada × Corrente Contínua — de forma visual
+
+ANALOGIA:
+
+  🥄 CORRENTE ALTERNADA (CA)
+  ────────────────────────────────────────
+  É como mexer uma colher dentro de um balde de água.
+
+  → O movimento cria ondas que se propagam pelo líquido.
+  → Essas ondas alcançam o outro lado do balde e podem
+    acionar algo lá — assim como o campo magnético variável
+    atravessa o núcleo e induz tensão no secundário.
+
+  ────────────────────────────────────────
+
+  🥄 CORRENTE CONTÍNUA (CC)
+  ────────────────────────────────────────
+  É como deixar a colher parada dentro da água.
+
+  → Sem movimento, nenhuma onda é criada.
+  → Nada se propaga, nada acontece do outro lado.
+  → Assim como o campo magnético estático não induz
+    absolutamente nada no enrolamento secundário.
+
+  ────────────────────────────────────────
+
+MORAL DA ANALOGIA:
+  Sem movimento, não há indução.
+  Sem indução, não há transformação.
+  O transformador precisa de variação para existir.
+

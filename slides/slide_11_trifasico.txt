@@ -1,0 +1,45 @@
+====================================
+SLIDE 11 — TRANSFORMADOR TRIFÁSICO
+====================================
+
+TÍTULO:
+Transformador Trifásico
+
+DESCRIÇÃO:
+Opera com três fases de corrente alternada, defasadas 120° entre si.
+Indispensável para aplicações industriais e de grande potência.
+
+ESTRUTURA:
+  Três conjuntos de enrolamentos (primário e secundário para cada fase),
+  todos no mesmo núcleo ou em núcleos separados.
+
+VANTAGENS:
+  ✅ Alta potência
+     → Fornece potência muito superior ao monofásico.
+     → Essencial para fábricas, grandes comércios e maquinários pesados.
+
+  ✅ Maior eficiência
+     → Distribuição de energia equilibrada com menor variação de tensão.
+
+  ✅ Mais compacto
+     → Para uma mesma potência elevada, um único trifásico é
+       menor e mais leve do que três monofásicos juntos.
+
+  ✅ Vida útil prolongada
+     → Menor desgaste; excelente valor a longo prazo.
+
+DESVANTAGENS:
+  ❌ Custo inicial mais elevado
+     → Exige maior investimento na compra e instalação elétrica,
+       com cabos e disjuntores mais robustos.
+
+  ❌ Manutenção complexa
+     → O conserto de falhas internas exige técnicos altamente qualificados.
+
+APLICAÇÕES TÍPICAS:
+  • Transmissão de energia elétrica em alta tensão
+  • Grandes redes de distribuição urbana e industrial
+  • Usinas hidrelétricas, termelétricas e eólicas
+  • Motores industriais e automação
+  • Parques de energia renovável
+

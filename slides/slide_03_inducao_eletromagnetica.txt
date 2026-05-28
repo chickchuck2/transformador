@@ -1,0 +1,32 @@
+====================================
+SLIDE 03 — PRINCÍPIO DA INDUÇÃO ELETROMAGNÉTICA
+====================================
+
+TÍTULO:
+A Base de Tudo: Indução Eletromagnética
+
+TEXTO INTRODUTÓRIO:
+Descoberta por Michael Faraday, a indução eletromagnética é o fenômeno
+em que a variação de um campo magnético nas proximidades de um condutor
+gera uma corrente elétrica.
+
+REGRA FUNDAMENTAL:
+Um campo magnético ESTÁTICO (parado) não gera energia.
+A "mágica" só acontece quando há variação na intensidade do campo.
+
+TRÊS PONTOS DA LEI DE FARADAY-LENZ:
+1. Campo Magnético Variável
+   → O campo precisa estar em movimento ou mudança constante.
+
+2. Fluxo Magnético
+   → É a quantidade de "linhas" do campo magnético que atravessam
+     a área de um circuito.
+
+3. Força Eletromotriz (Tensão)
+   → Quando o fluxo muda, os elétrons do fio são "empurrados",
+     criando uma tensão elétrica.
+
+FÓRMULA BASE:
+  V1 / V2 = N1 / N2
+  (V = tensão, N = número de espiras)
+
