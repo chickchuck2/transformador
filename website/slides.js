@@ -913,8 +913,8 @@ function render(animate = true) {
     const activeItem = document.querySelector('.sidebar-item.active');
     if (activeItem) activeItem.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
 
-    // scroll do main para o topo
-    document.getElementById('main').scrollTo({ top: 0, behavior: 'smooth' });
+    // scroll do main-scroll para o topo
+    document.getElementById('main-scroll').scrollTo({ top: 0, behavior: 'smooth' });
 
     // atualiza título do documento
     document.title = `${String(current + 1).padStart(2,'0')}. ${s.short} — Transformadores`;
